@@ -8,11 +8,8 @@ export default class UIController {
     }
 
     createInput(){
-        this.numInp = document.createElement('input');
-        this.numInp.setAttribute('type', 'text');
-        this.numInp.setAttribute('id', 'inp');
-        document.body.appendChild(this.numInp);
-
+        this.numInp = document.getElementById('card');
+       
         this.maskInput = new MaskInput(this.numInp, {
             mask: '0000-0000-0000-0000',
             alwaysShowMask: true,
